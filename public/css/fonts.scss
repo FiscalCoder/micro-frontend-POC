@@ -1,0 +1,49 @@
+:root {
+  font-size: 16px;
+}
+
+@mixin font-face(
+  $font-name,
+  $font-path,
+  $font-weight: 400,
+  $font-style: normal,
+) {
+  @font-face {
+    font-family: $font-name;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url("#{$font-path}.woff2") format("woff2"),
+      url("#{$font-path}.woff") format("woff"),
+      url("#{$font-path}.ttf") format("truetype");
+  }
+}
+
+@include font-face("Nunito-Black", "../fonts/Nunito-Black");
+@include font-face("Nunito-Bold", "../fonts/Nunito-Bold", 700);
+@include font-face("Nunito-Light", "../fonts/Nunito-Light");
+@include font-face("Nunito-Regular", "../fonts/Nunito-Regular");
+@include font-face("Nunito-SemiBold", "../fonts/Nunito-SemiBold", 600);
+@include font-face("Roboto-Regular", "../fonts/Roboto-Regular");
+@include font-face("Roboto-Medium", "../fonts/Roboto-Medium", 500);
+
+@include font-face("Material Icons", "../fonts/MaterialIcons-Regular", 500);
+@font-face {
+  font-family: "Material Icons Round";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIconsRound-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
+      format("embedded-opentype"),
+    url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+    url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+    url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+    url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,67 @@
+$Nunito: "Nunito";
+$Roboto: "Roboto";
+
+$light: 200;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+
+@mixin defineFont($family, $weight: 400) {
+  font-family: $family !important;
+  font-weight: $weight !important;
+}
+
+.Nunito-Black {
+  @include defineFont($Nunito);
+  color: black;
+}
+
+.Nunito-Bold {
+  @include defineFont($Nunito, $bold);
+}
+
+.Nunito-Light {
+  @include defineFont($Nunito, $light);
+}
+
+.Nunito-Regular {
+  @include defineFont($Nunito);
+}
+
+.Nunito-SemiBold {
+  @include defineFont($Nunito, $bold);
+}
+
+.Nunito-Bold {
+  @include defineFont($Nunito, $bold);
+}
+
+.Roboto-Regular {
+    @include defineFont($Roboto);
+}
+
+.Roboto-Medium {
+    @include defineFont($Roboto, $medium);
+}
+
+
+//   @font-face {
+//     font-family: "Roboto-Medium" !important;
+//     font-weight: 500 !important;
+//     src: local("Roboto"), url(../fonts/Roboto-Medium.ttf) format("truetype") !important;
+//   }
+
+//   @font-face {
+//     font-family: "Material Icons" !important;
+//     font-style: normal !important;
+//     font-weight: 400 !important;
+//     src: url(../fonts/MaterialIcons-Regular.ttf) format("truetype") !important;
+//   }
+
+//   @font-face {
+//     font-family: "Material Icons Round" !important;
+//     font-style: normal !important;
+//     font-weight: 400 !important;
+//     src: url(../fonts/MaterialIconsRound-Regular.otf) format("opentype") !important;
+//   }

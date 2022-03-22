@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Radio_Unselected</title>
+    <g id="01-Write-a-review-(On-the-website)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-Writing-the-review" transform="translate(-722.000000, -922.000000)" fill="#2C2C2C" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(583.000000, 100.000000)">
+                <g id="Group-4" transform="translate(30.000000, 783.000000)">
+                    <path d="M119,39 C113.48,39 109,43.48 109,49 C109,54.52 113.48,59 119,59 C124.52,59 129,54.52 129,49 C129,43.48 124.52,39 119,39 Z M119,57 C114.58,57 111,53.42 111,49 C111,44.58 114.58,41 119,41 C123.42,41 127,44.58 127,49 C127,53.42 123.42,57 119,57 Z" id="Radio_Unselected"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

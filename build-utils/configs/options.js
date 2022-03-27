@@ -1,12 +1,19 @@
+const { containersAndIDs } = require("../build-helpers/getFrontends")
+
+let modules = {};
+
+for (const key in containersAndIDs) {
+    if (Object.hasOwnProperty.call(containersAndIDs, key)) {
+        const element = containersAndIDs[key];
+        modules[element.host] = element.host
+    }
+}
+
 // caution: altering the keys without knowing the complete implementation will result in serious side effects.
 const options = {
 
     // values must be folder names of microFE components inside src
-    modules: {
-        agent_admin_apm: "admin-apm",
-        agent_apm: "agent-apm",
-        consumer_apm: "consumer-apm",
-    },
+    modules,
 
     // values must be the same as the folder name of the consumer microFE component under src/consumer-apm/components
     consumerComponents: {
@@ -30,11 +37,11 @@ const options = {
 const optionList = {
     moduleList: Object.values(options.modules),
     consumerComponentList: Object.values(options.consumerComponents),
-    actionList:  Object.values(options.actions),
+    actionList: Object.values(options.actions),
     environmentList: Object.values(options.environments),
 }
 
-const configCmd = "--config ./build-utils/webpack.config.base.js"
+const configCmd = "--config ./build-utils/webpack/webpack.config.js"
 
 // Key must be the same as action name to get executed
 const commandList = {
@@ -43,7 +50,7 @@ const commandList = {
     get jsReport() {
         return `${this.build} && npx webpack-bundle-analyzer dist/stats.json`
     },
-    get bundleReport(){
+    get bundleReport() {
         return `${this.build} && npx bundle-stats --html ./dist/stats.json && node ./build-utils/staticFiles.server.js`
     }
 }

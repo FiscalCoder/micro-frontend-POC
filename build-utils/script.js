@@ -1,16 +1,16 @@
 #! /usr/bin/env node
 const shell = require('shelljs');
-const { 
-    optionList: 
-        {
-            moduleList, 
-            consumerComponentList, 
-            actionList, 
-            environmentList: envList
-        },
-    commandList: commands, 
+const {
+    optionList:
+    {
+        moduleList,
+        consumerComponentList,
+        actionList,
+        environmentList: envList
+    },
+    commandList: commands,
     options: { modules }
-    } = require('./configs/options');
+} = require('./configs/options');
 
 
 const [
@@ -20,7 +20,7 @@ const [
 
 const {
     npm_config_module: moduleName,
-    npm_config_component: componentName, 
+    npm_config_component: componentName,
 } = process.env
 
 

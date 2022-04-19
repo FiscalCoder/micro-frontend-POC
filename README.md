@@ -1,6 +1,6 @@
 # micro-frontend-POC
 
-Build with using NPM. 
+Built using NPM. 
 
 ## Commands:
     - npm run serve --module=frontend-1

@@ -1,7 +1,7 @@
 
 function App() {
     return (<>
-        <div>
+        <div className="p-3 mb-2 bg-primary text-white">
             Demo POC Fronted-2
         </div>
     </>)

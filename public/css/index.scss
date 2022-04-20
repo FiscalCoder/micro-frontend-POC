@@ -1,6 +1,14 @@
 #demo-poc {
   // @import './libraries/bootstrap';
-  @import "./main.scss";
+
+  .bg-violet {
+    background-color: rgba(0, 0, 255, 0.3) !important;
+  }
+
+  .bg-red {
+    background-color: rgba(236, 14, 14, 0.3) !important;
+  }
+  // @import "./main.scss";
 }
 // @import '~bootstrap/scss/bootstrap.scss';
 // @import '~bootstrap/scss/bootstrap';
